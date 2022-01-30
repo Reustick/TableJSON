@@ -1,7 +1,20 @@
 import './styles/all.scss'
 
+// const getData =() => {
+//    return fetch('db.json').then(function(response) {
+//     return response.json();
+//   }).then(function(json) {
+//     let products = json;
+//     initialize(products);
+//   }).catch(function(err) {
+//     console.log('Fetch problem: ' + err.message);
+//   });
+  
+// }
+// console.log(getData());
+
 function getData() {
-  return fetch('db.json')
+  return fetch('files/db.json')
     .then(response => {
       if (response.ok) {
         return response.json();
